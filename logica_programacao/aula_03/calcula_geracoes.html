@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+    
+    
+    var anoColonizacao = 1500;
+    var anoAtual = 2018;
+
+    var anosEntreGeracoes = 28;
+
+    var quantidadeDeGeracoes = (anoAtual - anoColonizacao)/anosEntreGeracoes;
+
+    function mostra(frase) {
+        
+        document.write(frase);
+        pulaLinha();
+    } 
+    
+    function pulaLinha() {
+        
+        document.write("<br/");
+
+    }
+
+    mostra("A quantidade de gerações desde " + anoColonizacao + " é " + quantidadeDeGeracoes);
+
+</script>

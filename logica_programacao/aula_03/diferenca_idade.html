@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+
+    }
+
+    function calculaDiferenca(idadeIrmao,idadeIrma){
+        
+        var diferenca;
+        var fraseFinal = "A diferença das nossas idades é de: ";
+        
+        if(idadeIrmao>idadeIrma){
+
+            diferenca = idadeIrmao - idadeIrma;    
+            mostra(fraseFinal + diferenca);
+        
+        } else {
+
+            diferenca = idadeIrma - idadeIrmao;
+            mostra(fraseFinal+diferenca);
+
+        }
+    }
+
+    function pulaLinha() {
+
+        document.write("<br/>")
+    
+    }
+
+    var idadeAlisson = 15;
+    var idadeAgatha = 19;
+    
+    mostra("<h1>Diferença de idades</h1>");
+    mostra("<p>Meu nome é Alisson e eu tenho " + idadeAlisson + " anos!</p>");
+    mostra("<p>Minha irmã Agatha tem " + idadeAgatha + " anos!</p>");
+
+    calculaDiferenca(idadeAlisson,idadeAgatha);
+
+</script>

@@ -11,8 +11,8 @@ require_once "RespostaEmPorcento.php";
 require_once "RespostaEmXml.php";
 
 
-$minhaConta = new Conta("Alisson Gabriel",1200);
+$minhaConta = new Conta("Alisson Gabriel", 1200);
 $minhaRequisicao = new Requisicao(Formato::$XML);
 $corrente = new chain();
-echo $corrente->defineResposta($minhaConta,$minhaRequisicao);
+echo $corrente->defineResposta($minhaConta, $minhaRequisicao);
 ?>
